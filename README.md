@@ -1,15 +1,15 @@
-# DMEyF 2026: primera competencia
+# DMEyF 2026: primera competencia - Mario Freites
 
 Este repo tiene el código y los resultados para reproducir mi envío final de la primera competencia: la predicción de BAJA+2 para 202108.
 
-**Envío final:** `c9923_60sem_corte11000.csv`. Tiene los 11.000 clientes de mayor probabilidad promediada sobre 60 semillas. Sacó **106,205 en el leaderboard público**.
+**Envío final:** `c9923_60sem_corte11000.csv`. Tiene los 11.000 clientes de mayor probabilidad promediada sobre 60 semillas. Obtuvo **106,205 en el leaderboard público**.
 
 ## El modelo
 
 Son dos experimentos encadenados:
 
 1. **c9920, canaritos asesinos.** Parte de 760 variables: las originales y sus lag1, delta_lag1, lag2 y delta_lag2, con ranking con cero fijo por mes. Elimina las que no le ganan a los canaritos, con el corte en media + 2 desvíos. Quedan 128 variables. También hace una optimización bayesiana sobre esa lista.
-2. **c9923, variables nuevas.** Toma esas 128 variables y les suma 11 atributos nuevos, con sus lags y deltas, más promedios y pendientes de 3 meses: 299 variables en total. Hace una bayesiana propia de 25 corridas que maximiza el AUC de junio. Después entrena de marzo a junio con los mejores valores (3304 iteraciones, 1125 hojas, `min_sum_hessian_in_leaf` 0,595) y predice agosto con 60 semillas.
+2. **c9923, variables nuevas.** Toma esas 128 variables y les suma 11 atributos nuevos, con sus lags y deltas, más promedios y pendientes de 3 meses: 299 variables en total. Hace una bayesiana propia de 25 corridas que maximiza el AUC de junio. Después entrena de marzo a junio con los mejores valores (3304 iteraciones, 1125 hojas, `min_sum_hessian_in_leaf` 0,595) y predice agosto con **60 semillas**.
 
 Los dos usan zLightGBM con canaritos 1 a 1, learning_rate 0,005, feature_fraction 0,5 y max_bin 31. El detalle de cada uno está en su `design.md`.
 
