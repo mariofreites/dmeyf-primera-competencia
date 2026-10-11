@@ -1,6 +1,6 @@
 # DMEyF 2026: primera competencia - Mario Freites
 
-Este repo tiene el código y los resultados para reproducir mi envío final de la primera competencia: la predicción de BAJA+2 para 202108.
+Este repo tiene el código y los resultados para reproducir el envío final de la primera competencia: la predicción de BAJA+2 para 202108.
 
 **Envío final:** `c9923_60sem_corte11000.csv`. Tiene los 11.000 clientes de mayor probabilidad promediada sobre 60 semillas. Obtuvo **106,205 en el leaderboard público**.
 
@@ -19,7 +19,7 @@ Junio es el mes de validación. c9920 elige la lista de variables con mayo y com
 
 ## Por qué el corte 11.000
 
-c9923 genera un CSV por corte, de 9.000 a 15.000 de a 500. Mandé cuatro al bot:
+c9923 genera un CSV por corte, de 9.000 a 15.000 de a 500. Se mandaron cuatro al bot:
 
 | Corte | Ganancia en junio | Público |
 |---|---|---|
@@ -75,5 +75,5 @@ En ese caso se saltea la comparación de junio contra c9920, que no influye en e
 
 ## Notas
 
-- **Nombres.** Estos experimentos corrieron como z9920 y z9923 en mi repo de trabajo. Acá les cambié la letra a `c` para no confundirlos con los experimentos de la cátedra. El cambio no toca ningún cálculo. Los logs y los CSV de `resultados/` son los archivos originales de las corridas, así que todavía dicen z9920 y z9923. Las referencias a s0004, s0005, s0006 y z9918 son experimentos anteriores de ese repo de trabajo, y z495 es un notebook de la cátedra. Los valores que hacen falta de esos experimentos ya están fijos en el código.
+- **Nombres.** Estos experimentos corrieron como z9920 y z9923 en el repo de trabajo original. Acá se les cambió la letra a `c` para no confundirlos con los experimentos de la cátedra. El cambio no toca ningún cálculo. Los logs y los CSV de `resultados/` son los archivos originales de las corridas, así que todavía dicen z9920 y z9923. Las referencias a s0004, s0005, s0006 y z9918 son experimentos anteriores de ese repo de trabajo, y z495 es un notebook de la cátedra. Los valores que hacen falta de esos experimentos ya están fijos en el código.
 - **Reproducibilidad.** Las semillas están fijas, pero LightGBM con varios hilos puede dar diferencias mínimas entre máquinas, y eso puede mover algo la bayesiana. Para comparar, en `resultados/` están las corridas originales. Se usó Optuna 5.0.0.
