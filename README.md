@@ -13,6 +13,23 @@ Son dos experimentos encadenados:
 
 Los dos usan zLightGBM con canaritos 1 a 1, learning_rate 0,005, feature_fraction 0,5 y max_bin 31. El detalle de cada uno está en su `design.md`.
 
+## Validación
+
+Junio es el mes de validación. c9920 elige la lista de variables con mayo y compara las listas en junio. Las dos bayesianas entrenan con marzo a mayo y miden el AUC sobre junio, con BAJA+1 y BAJA+2 como positivos. El modelo final entrena con marzo a junio y predice agosto. Julio no se usa para entrenar porque todavía no tiene la clase completa.
+
+## Por qué el corte 11.000
+
+c9923 genera un CSV por corte, de 9.000 a 15.000 de a 500. Mandé cuatro al bot:
+
+| Corte | Ganancia en junio | Público |
+|---|---|---|
+| 10.500 | 394,7 | 105,408 |
+| **11.000** | **400,9** | **106,205** |
+| 11.500 | 399,7 | 103,620 |
+| 12.000 | 398,6 | 103,400 |
+
+En junio, la ganancia forma una meseta entre 11.000 y 13.500 (de 398 a 404). 11.000 es el comienzo de esa meseta y el mejor de los cuatro en el público. La ganancia de junio de todos los cortes está en `resultados/c9923/ganancia_junio_por_corte.csv`.
+
 ## Estructura
 
 ```
@@ -25,6 +42,8 @@ resultados/c9923/              envío final, bayesiana, ganancia de junio por co
 ## Cómo reproducirlo
 
 Los notebooks están pensados para las máquinas virtuales de Google Cloud de la cátedra, con el bucket montado en `~/buckets/b1`. Cada notebook descarga el dataset y compila zLightGBM solo. Los resultados quedan en `~/buckets/b1/exp/<experimento>/`, y al terminar el notebook borra la máquina.
+
+**Máquina:** c9920 corrió con 8 hilos, y c9923 en una máquina de 96 GB de RAM y 12 vCPU. Entre los dos son unas 9,5 horas. Con menos hilos funciona igual, pero tarda más.
 
 ```bash
 git clone https://github.com/mariofreites/dmeyf-primera-competencia.git ~/dmeyf-primera-competencia
