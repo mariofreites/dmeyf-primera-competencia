@@ -1,0 +1,172 @@
+2026-10-11 04:42:45  ======================================================================
+2026-10-11 04:42:45  z9923 | modo prueba: False | Google Cloud: True | hilos: 12
+2026-10-11 04:42:45  Resultados: /home/ds/buckets/b1/exp/z9923 | datos: /home/ds/datasets | entrada de z9920: /home/ds/buckets/b1/exp/z9920
+2026-10-11 04:42:45  Base: media_2desvios (128 variables) | valores de z9920 (primera corrida): {'num_iterations': 3981, 'num_leaves': 675, 'min_sum_hessian_in_leaf': 0.4684690798156574}
+2026-10-11 04:42:45  Bayesiana: 25 corridas, {'num_iterations': (64, 4096), 'num_leaves': (16, 2048), 'min_sum_hessian_in_leaf': (1e-06, 1.0)} | agosto: hasta 60 semillas
+2026-10-11 04:42:45  Para parar agosto: touch /home/ds/buckets/b1/exp/z9923/PARAR | para cortar la bayesiana: touch /home/ds/buckets/b1/exp/z9923/CORTAR_BAYESIANA
+2026-10-11 04:42:47  zlightgbm OK (/home/ds/zlgb/lightgbm/__init__.py): cortes en canaritos sin el parámetro 2296, con el parámetro 0
+2026-10-11 04:42:47  Optuna 5.0.0
+2026-10-11 04:42:47  Dataset: /home/ds/datasets/competencia_01_crudo.csv (470 MB)
+2026-10-11 04:43:00  Panel: 983061 filas de [202103, 202104, 202105, 202106, 202107, 202108] | 152 campos originales
+2026-10-11 04:43:02  Atributos nuevos: ['mfondos_pesos_total', 'ctc_transacciones_total', 'mtc_saldo_total', 'mmargen_activo_pasivo', 'mtc_pagominimo_total', 'rtc_saldo_limite', 'rdigital_trx', 'cproductos_perdidos', 'tperdio_payroll', 'tinicio_comision', 'mpatrimonio_neto']
+2026-10-11 04:43:11  Clase: {202103: {'BAJA+1': 1019, 'BAJA+2': 960, 'CONTINUA': 160921}, 202104: {'BAJA+1': 964, 'BAJA+2': 1139, 'CONTINUA': 161181}, 202105: {'BAJA+1': 1143, 'BAJA+2': 870, 'CONTINUA': 161755}, 202106: {'BAJA+1': 874, 'BAJA+2': 1098, 'CONTINUA': 162142}}
+2026-10-11 04:43:11  Filas: 654066 de marzo a junio, 164647 de agosto | variables: 128 de z9920 + 55 nuevas + 116 avg3/slope3 (47 campos base) = 299 | datos en 0.4 min
+2026-10-11 04:43:32  Ranking listo en 21 s
+2026-10-11 04:43:32  Funciones listas
+2026-10-11 04:43:33  Bayesiana: 0 de 25 corridas hechas
+2026-10-11 04:47:09    corrida  1/25 (z9920 ) iter 3981 | hojas  675 | hessian 0.46847 -> AUC 0.92427 | AP 0.0708 | ganancia 403.9 con 11715 | 1615 árboles | gain nuevas 16% avg/slope 20% | 3.6 min | faltan ~0.8 h
+2026-10-11 04:50:04    corrida  2/25 (azar  ) iter 2850 | hojas  142 | hessian 0.54895 -> AUC 0.92382 | AP 0.0700 | ganancia 397.0 con 13374 | 1515 árboles | gain nuevas 17% avg/slope 19% | 2.9 min | faltan ~0.8 h
+2026-10-11 04:52:25    corrida  3/25 (azar  ) iter 1563 | hojas  326 | hessian 0.65305 -> AUC 0.92391 | AP 0.0703 | ganancia 405.5 con 12022 | 1331 árboles | gain nuevas 16% avg/slope 19% | 2.3 min | faltan ~0.8 h
+2026-10-11 04:55:21    corrida  4/25 (azar  ) iter 2937 | hojas  144 | hessian 0.86619 -> AUC 0.92415 | AP 0.0709 | ganancia 404.3 con 10800 | 1546 árboles | gain nuevas 16% avg/slope 19% | 2.9 min | faltan ~0.8 h
+2026-10-11 04:56:42    corrida  5/25 (azar  ) iter  428 | hojas 1423 | hessian 0.15274 -> AUC 0.92116 | AP 0.0682 | ganancia 387.6 con 11928 | 428 árboles | gain nuevas 16% avg/slope 20% | 1.3 min | faltan ~0.8 h
+2026-10-11 05:00:22    corrida  6/25 (azar  ) iter 3857 | hojas 1819 | hessian 0.31675 -> AUC 0.92447 | AP 0.0703 | ganancia 406.7 con 11504 | 1652 árboles | gain nuevas 16% avg/slope 20% | 3.7 min | faltan ~0.7 h
+2026-10-11 05:02:37    corrida  7/25 (azar  ) iter 1430 | hojas  298 | hessian 0.59568 -> AUC 0.92388 | AP 0.0700 | ganancia 391.1 con 12407 | 1275 árboles | gain nuevas 17% avg/slope 20% | 2.2 min | faltan ~0.7 h
+2026-10-11 05:05:15    corrida  8/25 (azar  ) iter 2016 | hojas 1343 | hessian 0.43996 -> AUC 0.92414 | AP 0.0698 | ganancia 392.5 con 13299 | 1410 árboles | gain nuevas 16% avg/slope 20% | 2.6 min | faltan ~0.7 h
+2026-10-11 05:07:11    corrida  9/25 (azar  ) iter  951 | hojas 1085 | hessian 0.57441 -> AUC 0.92385 | AP 0.0697 | ganancia 396.5 con 12348 | 950 árboles | gain nuevas 16% avg/slope 22% | 1.9 min | faltan ~0.7 h
+2026-10-11 05:10:54    corrida 10/25 (azar  ) iter 4069 | hojas 1097 | hessian 0.34380 -> AUC 0.92439 | AP 0.0693 | ganancia 397.7 con 12274 | 1636 árboles | gain nuevas 17% avg/slope 21% | 3.7 min | faltan ~0.6 h
+2026-10-11 05:13:47    corrida 11/25 (azar  ) iter 2088 | hojas  559 | hessian 0.36945 -> AUC 0.92426 | AP 0.0698 | ganancia 399.2 con 12351 | 1452 árboles | gain nuevas 17% avg/slope 20% | 2.9 min | faltan ~0.6 h
+2026-10-11 05:17:24    corrida 12/25 (guiada) iter 3787 | hojas 1980 | hessian 0.23469 -> AUC 0.92418 | AP 0.0702 | ganancia 401.6 con 11914 | 1617 árboles | gain nuevas 17% avg/slope 22% | 3.6 min | faltan ~0.5 h
+2026-10-11 05:20:51    corrida 13/25 (guiada) iter 3687 | hojas 2026 | hessian 0.71076 -> AUC 0.92418 | AP 0.0709 | ganancia 396.6 con 12805 | 1633 árboles | gain nuevas 17% avg/slope 21% | 3.4 min | faltan ~0.5 h
+2026-10-11 05:23:59    corrida 14/25 (guiada) iter 2809 | hojas 1718 | hessian 0.15297 -> AUC 0.92423 | AP 0.0701 | ganancia 401.9 con 12883 | 1553 árboles | gain nuevas 16% avg/slope 20% | 3.1 min | faltan ~0.4 h
+2026-10-11 05:27:35    corrida 15/25 (guiada) iter 3801 | hojas  377 | hessian 0.10020 -> AUC 0.92407 | AP 0.0704 | ganancia 390.9 con 12813 | 1629 árboles | gain nuevas 16% avg/slope 22% | 3.6 min | faltan ~0.4 h
+2026-10-11 05:31:17    corrida 16/25 (guiada) iter 3942 | hojas 1025 | hessian 0.24021 -> AUC 0.92433 | AP 0.0691 | ganancia 396.6 con 11008 | 1621 árboles | gain nuevas 15% avg/slope 21% | 3.7 min | faltan ~0.3 h
+2026-10-11 05:35:49    corrida 17/25 (guiada) iter 4027 | hojas 1438 | hessian 0.70295 -> AUC 0.92440 | AP 0.0705 | ganancia 398.0 con 12642 | 1631 árboles | gain nuevas 18% avg/slope 20% | 4.5 min | faltan ~0.3 h
+2026-10-11 05:41:55    corrida 18/25 (guiada) iter 4062 | hojas 1460 | hessian 0.76529 -> AUC 0.92415 | AP 0.0700 | ganancia 402.3 con 12232 | 1630 árboles | gain nuevas 18% avg/slope 20% | 6.1 min | faltan ~0.3 h
+2026-10-11 05:45:02    corrida 19/25 (guiada) iter 3053 | hojas 1906 | hessian 0.45143 -> AUC 0.92424 | AP 0.0703 | ganancia 398.4 con 12512 | 1549 árboles | gain nuevas 16% avg/slope 20% | 3.1 min | faltan ~0.2 h
+2026-10-11 05:48:18    corrida 20/25 (guiada) iter 3266 | hojas 1313 | hessian 0.60137 -> AUC 0.92444 | AP 0.0713 | ganancia 402.3 con 11760 | 1573 árboles | gain nuevas 18% avg/slope 20% | 3.2 min | faltan ~0.2 h
+2026-10-11 05:51:32    corrida 21/25 (guiada) iter 3304 | hojas 1125 | hessian 0.59471 -> AUC 0.92455 | AP 0.0710 | ganancia 402.2 con 12478 | 1580 árboles | gain nuevas 17% avg/slope 20% | 3.2 min | faltan ~0.2 h
+2026-10-11 05:54:52    corrida 22/25 (guiada) iter 3378 | hojas 1276 | hessian 0.48774 -> AUC 0.92420 | AP 0.0697 | ganancia 403.3 con 12360 | 1592 árboles | gain nuevas 18% avg/slope 21% | 3.3 min | faltan ~0.1 h
+2026-10-11 05:58:08    corrida 23/25 (guiada) iter 3293 | hojas 1652 | hessian 0.72920 -> AUC 0.92420 | AP 0.0707 | ganancia 397.9 con 12132 | 1573 árboles | gain nuevas 16% avg/slope 20% | 3.2 min | faltan ~0.1 h
+2026-10-11 06:01:18    corrida 24/25 (guiada) iter 3188 | hojas 1213 | hessian 0.89922 -> AUC 0.92443 | AP 0.0713 | ganancia 397.9 con 12543 | 1586 árboles | gain nuevas 17% avg/slope 20% | 3.2 min | faltan ~0.0 h
+2026-10-11 06:04:34    corrida 25/25 (guiada) iter 3288 | hojas  839 | hessian 0.56950 -> AUC 0.92393 | AP 0.0709 | ganancia 399.5 con 12383 | 1588 árboles | gain nuevas 17% avg/slope 21% | 3.2 min | faltan ~0.0 h
+2026-10-11 06:04:35  Mejores valores (AUC): {'num_iterations': 3304, 'num_leaves': 1125, 'min_sum_hessian_in_leaf': 0.5947121575478522} | corrida 20 | AUC junio 0.92455 | AP 0.0710 | ganancia 402.2
+2026-10-11 06:04:35    (informativo) la mejor por ap_baja2 es la corrida 19: iter 3266, hojas 1313, hessian 0.60137
+2026-10-11 06:04:35    (informativo) la mejor por ganancia_maxima es la corrida 5: iter 3857, hojas 1819, hessian 0.31675
+2026-10-11 06:07:52    referencia semilla 303011: ganancia 404.4 | 3.3 min
+2026-10-11 06:11:10    referencia semilla 602909: ganancia 405.4 | 3.3 min
+2026-10-11 06:11:10    ensamble de 3 z9923: AUC 0.92464 | AP 0.0703 | ganancia máxima 403.8 con 13386 | en 11000: 400.9
+2026-10-11 06:11:10    ensamble de 3 z9920: AUC 0.92375 | AP 0.0692 | ganancia máxima 390.3 con 12698 | en 11000: 377.6
+2026-10-11 06:11:12  Agosto: 0 semillas guardadas, faltan 60 (tope 60)
+2026-10-11 06:16:00    [1/60] semilla 101737: 4.8 min | si nadie lo para, faltan ~4.7 h
+2026-10-11 06:16:05    cortes al día: 13 CSV con 1 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 06:20:49    [2/60] semilla 303011: 4.7 min | si nadie lo para, faltan ~4.6 h
+2026-10-11 06:20:55    cortes al día: 13 CSV con 2 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 06:25:34    [3/60] semilla 602909: 4.7 min | si nadie lo para, faltan ~4.5 h
+2026-10-11 06:25:40    cortes al día: 13 CSV con 3 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 06:30:24    [4/60] semilla 707717: 4.7 min | si nadie lo para, faltan ~4.5 h
+2026-10-11 06:30:30    cortes al día: 13 CSV con 4 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 06:35:19    [5/60] semilla 906007: 4.8 min | si nadie lo para, faltan ~4.4 h
+2026-10-11 06:35:25    cortes al día: 13 CSV con 5 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 06:40:14    [6/60] semilla 568318: 4.8 min | si nadie lo para, faltan ~4.4 h
+2026-10-11 06:40:19    cortes al día: 13 CSV con 6 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 06:45:07    [7/60] semilla 641463: 4.8 min | si nadie lo para, faltan ~4.3 h
+2026-10-11 06:45:13    cortes al día: 13 CSV con 7 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 06:50:02    [8/60] semilla 591763: 4.8 min | si nadie lo para, faltan ~4.2 h
+2026-10-11 06:50:08    cortes al día: 13 CSV con 8 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 06:54:59    [9/60] semilla 616818: 4.8 min | si nadie lo para, faltan ~4.1 h
+2026-10-11 06:55:04    cortes al día: 13 CSV con 9 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 06:59:53    [10/60] semilla 193376: 4.8 min | si nadie lo para, faltan ~4.1 h
+2026-10-11 06:59:58    cortes al día: 13 CSV con 10 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 07:04:41    [11/60] semilla 854303: 4.7 min | si nadie lo para, faltan ~4.0 h
+2026-10-11 07:04:47    cortes al día: 13 CSV con 11 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 07:09:29    [12/60] semilla 358867: 4.7 min | si nadie lo para, faltan ~3.9 h
+2026-10-11 07:09:34    cortes al día: 13 CSV con 12 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 07:14:24    [13/60] semilla 781969: 4.8 min | si nadie lo para, faltan ~3.8 h
+2026-10-11 07:14:30    cortes al día: 13 CSV con 13 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 07:19:17    [14/60] semilla 892547: 4.8 min | si nadie lo para, faltan ~3.7 h
+2026-10-11 07:19:22    cortes al día: 13 CSV con 14 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 07:24:09    [15/60] semilla 207331: 4.8 min | si nadie lo para, faltan ~3.6 h
+2026-10-11 07:24:15    cortes al día: 13 CSV con 15 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 07:29:34    [16/60] semilla 392281: 5.3 min | si nadie lo para, faltan ~3.6 h
+2026-10-11 07:29:40    cortes al día: 13 CSV con 16 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 07:34:56    [17/60] semilla 108179: 5.3 min | si nadie lo para, faltan ~3.5 h
+2026-10-11 07:35:01    cortes al día: 13 CSV con 17 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 07:40:12    [18/60] semilla 198461: 5.2 min | si nadie lo para, faltan ~3.5 h
+2026-10-11 07:40:18    cortes al día: 13 CSV con 18 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 07:45:27    [19/60] semilla 406951: 5.2 min | si nadie lo para, faltan ~3.4 h
+2026-10-11 07:45:33    cortes al día: 13 CSV con 19 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 07:50:43    [20/60] semilla 670931: 5.2 min | si nadie lo para, faltan ~3.3 h
+2026-10-11 07:50:48    cortes al día: 13 CSV con 20 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 07:56:11    [21/60] semilla 855089: 5.4 min | si nadie lo para, faltan ~3.2 h
+2026-10-11 07:56:17    cortes al día: 13 CSV con 21 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 08:01:43    [22/60] semilla 106907: 5.4 min | si nadie lo para, faltan ~3.2 h
+2026-10-11 08:01:48    cortes al día: 13 CSV con 22 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 08:07:13    [23/60] semilla 362419: 5.4 min | si nadie lo para, faltan ~3.1 h
+2026-10-11 08:07:19    cortes al día: 13 CSV con 23 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 08:12:46    [24/60] semilla 364031: 5.5 min | si nadie lo para, faltan ~3.0 h
+2026-10-11 08:12:52    cortes al día: 13 CSV con 24 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 08:18:19    [25/60] semilla 974513: 5.4 min | si nadie lo para, faltan ~3.0 h
+2026-10-11 08:18:24    cortes al día: 13 CSV con 25 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 08:23:48    [26/60] semilla 190753: 5.4 min | si nadie lo para, faltan ~2.9 h
+2026-10-11 08:23:54    cortes al día: 13 CSV con 26 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 08:29:04    [27/60] semilla 294403: 5.2 min | si nadie lo para, faltan ~2.8 h
+2026-10-11 08:29:09    cortes al día: 13 CSV con 27 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 08:34:10    [28/60] semilla 998077: 5.0 min | si nadie lo para, faltan ~2.7 h
+2026-10-11 08:34:15    cortes al día: 13 CSV con 28 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 08:39:10    [29/60] semilla 514643: 4.9 min | si nadie lo para, faltan ~2.6 h
+2026-10-11 08:39:16    cortes al día: 13 CSV con 29 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 08:44:07    [30/60] semilla 625517: 4.9 min | si nadie lo para, faltan ~2.5 h
+2026-10-11 08:44:12    cortes al día: 13 CSV con 30 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 08:49:00    [31/60] semilla 348217: 4.8 min | si nadie lo para, faltan ~2.5 h
+2026-10-11 08:49:05    cortes al día: 13 CSV con 31 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 08:53:48    [32/60] semilla 681371: 4.7 min | si nadie lo para, faltan ~2.4 h
+2026-10-11 08:53:53    cortes al día: 13 CSV con 32 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 08:58:36    [33/60] semilla 787513: 4.7 min | si nadie lo para, faltan ~2.3 h
+2026-10-11 08:58:41    cortes al día: 13 CSV con 33 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 09:03:28    [34/60] semilla 652217: 4.8 min | si nadie lo para, faltan ~2.2 h
+2026-10-11 09:03:33    cortes al día: 13 CSV con 34 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 09:08:17    [35/60] semilla 456283: 4.7 min | si nadie lo para, faltan ~2.1 h
+2026-10-11 09:08:22    cortes al día: 13 CSV con 35 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 09:13:02    [36/60] semilla 675569: 4.7 min | si nadie lo para, faltan ~2.0 h
+2026-10-11 09:13:06    cortes al día: 13 CSV con 36 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 09:17:45    [37/60] semilla 623003: 4.6 min | si nadie lo para, faltan ~1.9 h
+2026-10-11 09:17:50    cortes al día: 13 CSV con 37 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 09:22:34    [38/60] semilla 696763: 4.7 min | si nadie lo para, faltan ~1.8 h
+2026-10-11 09:22:39    cortes al día: 13 CSV con 38 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 09:27:22    [39/60] semilla 497507: 4.7 min | si nadie lo para, faltan ~1.8 h
+2026-10-11 09:27:27    cortes al día: 13 CSV con 39 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 09:32:10    [40/60] semilla 253609: 4.7 min | si nadie lo para, faltan ~1.7 h
+2026-10-11 09:32:15    cortes al día: 13 CSV con 40 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 09:36:54    [41/60] semilla 158363: 4.6 min | si nadie lo para, faltan ~1.6 h
+2026-10-11 09:36:59    cortes al día: 13 CSV con 41 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 09:41:39    [42/60] semilla 502597: 4.7 min | si nadie lo para, faltan ~1.5 h
+2026-10-11 09:41:44    cortes al día: 13 CSV con 42 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 09:46:27    [43/60] semilla 764327: 4.7 min | si nadie lo para, faltan ~1.4 h
+2026-10-11 09:46:32    cortes al día: 13 CSV con 43 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 09:51:17    [44/60] semilla 913771: 4.7 min | si nadie lo para, faltan ~1.3 h
+2026-10-11 09:51:22    cortes al día: 13 CSV con 44 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 09:56:03    [45/60] semilla 192007: 4.7 min | si nadie lo para, faltan ~1.2 h
+2026-10-11 09:56:08    cortes al día: 13 CSV con 45 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 10:00:50    [46/60] semilla 485311: 4.7 min | si nadie lo para, faltan ~1.2 h
+2026-10-11 10:00:54    cortes al día: 13 CSV con 46 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 10:05:35    [47/60] semilla 755509: 4.7 min | si nadie lo para, faltan ~1.1 h
+2026-10-11 10:05:40    cortes al día: 13 CSV con 47 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 10:10:20    [48/60] semilla 947483: 4.7 min | si nadie lo para, faltan ~1.0 h
+2026-10-11 10:10:25    cortes al día: 13 CSV con 48 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 10:15:08    [49/60] semilla 255197: 4.7 min | si nadie lo para, faltan ~0.9 h
+2026-10-11 10:15:13    cortes al día: 13 CSV con 49 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 10:19:53    [50/60] semilla 208333: 4.7 min | si nadie lo para, faltan ~0.8 h
+2026-10-11 10:19:58    cortes al día: 13 CSV con 50 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 10:24:37    [51/60] semilla 662657: 4.7 min | si nadie lo para, faltan ~0.7 h
+2026-10-11 10:24:42    cortes al día: 13 CSV con 51 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 10:29:21    [52/60] semilla 561307: 4.7 min | si nadie lo para, faltan ~0.7 h
+2026-10-11 10:29:26    cortes al día: 13 CSV con 52 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 10:34:10    [53/60] semilla 542873: 4.7 min | si nadie lo para, faltan ~0.6 h
+2026-10-11 10:34:15    cortes al día: 13 CSV con 53 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 10:39:01    [54/60] semilla 402049: 4.8 min | si nadie lo para, faltan ~0.5 h
+2026-10-11 10:39:06    cortes al día: 13 CSV con 54 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 10:43:48    [55/60] semilla 218711: 4.7 min | si nadie lo para, faltan ~0.4 h
+2026-10-11 10:43:53    cortes al día: 13 CSV con 55 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 10:48:40    [56/60] semilla 358223: 4.8 min | si nadie lo para, faltan ~0.3 h
+2026-10-11 10:48:44    cortes al día: 13 CSV con 56 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 10:53:34    [57/60] semilla 610847: 4.8 min | si nadie lo para, faltan ~0.2 h
+2026-10-11 10:53:38    cortes al día: 13 CSV con 57 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 10:58:24    [58/60] semilla 323083: 4.8 min | si nadie lo para, faltan ~0.2 h
+2026-10-11 10:58:29    cortes al día: 13 CSV con 58 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 11:03:05    [59/60] semilla 952507: 4.6 min | si nadie lo para, faltan ~0.1 h
+2026-10-11 11:03:10    cortes al día: 13 CSV con 59 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 11:07:50    [60/60] semilla 678637: 4.7 min | si nadie lo para, faltan ~0.0 h
+2026-10-11 11:07:55    cortes al día: 13 CSV con 60 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 11:07:58    cortes al día: 13 CSV con 60 semillas en /home/ds/buckets/b1/exp/z9923/5_cortes
+2026-10-11 11:07:58  z9923 terminado (modo prueba: False). 60 semillas de agosto. Resultados en /home/ds/buckets/b1/exp/z9923
+2026-10-11 11:07:58  [apagado] fin del notebook: borrando la máquina virtual. Los resultados quedaron en /home/ds/buckets/b1/exp/z9923

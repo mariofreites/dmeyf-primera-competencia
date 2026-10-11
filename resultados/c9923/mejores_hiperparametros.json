@@ -1,0 +1,19 @@
+{
+  "corrida": 20,
+  "valores": {
+    "num_iterations": 3304,
+    "num_leaves": 1125,
+    "min_sum_hessian_in_leaf": 0.5947121575478522
+  },
+  "ap_baja2": 0.071029588434672,
+  "auc": 0.9245495609325289,
+  "gain_avg3_slope3": 0.2043,
+  "gain_base": 0.6244,
+  "gain_nuevas": 0.1712,
+  "ganancia_corte_11000": 396.12075848320706,
+  "ganancia_maxima": 402.152205589031,
+  "mejor_corte": 12478,
+  "minutos": 3.2,
+  "num_trees": 1580,
+  "tipo": "guiada"
+}

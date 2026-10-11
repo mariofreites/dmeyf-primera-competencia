@@ -1,0 +1,88 @@
+2026-10-10 14:16:24  ======================================================================
+2026-10-10 14:16:24  z9920 | modo prueba: False | Google Cloud: True | hilos: 8
+2026-10-10 14:16:24  Resultados: /home/ds/buckets/b1/exp/z9920
+2026-10-10 14:16:24  Datos: /home/ds/datasets | temporales: /home/ds/local/z9920
+2026-10-10 14:16:24  Selección: {'num_iterations': 2848, 'num_leaves': 71, 'min_sum_hessian_in_leaf': 0.0067} {'learning_rate': 0.005, 'feature_fraction': 0.5, 'min_data_in_leaf': 0, 'max_bin': 31} | mes 202105 | semillas [101737, 303011, 602909]
+2026-10-10 14:16:24  Comparación: {'num_iterations': 1155, 'num_leaves': 126, 'min_sum_hessian_in_leaf': 0.094} | meses [202103, 202104, 202105] -> 202106 | semillas [101737, 303011, 602909, 707717, 906007]
+2026-10-10 14:16:24  Semillas de agosto: [101737, 303011, 602909, 707717, 906007, 568318, 641463, 591763, 616818, 193376, 854303, 358867, 781969, 892547, 207331, 392281, 108179, 198461, 406951, 670931]
+2026-10-10 14:16:26  zlightgbm OK (/home/ds/zlgb/lightgbm/__init__.py): cortes en canaritos sin el parámetro 2296, con el parámetro 0
+2026-10-10 14:16:26  Optuna 5.0.0
+2026-10-10 14:16:27  Dataset: /home/ds/datasets/competencia_01_crudo.csv (470 MB)
+2026-10-10 14:16:41  Clase: {202103: {'BAJA+1': 1019, 'BAJA+2': 960, 'CONTINUA': 160921}, 202104: {'BAJA+1': 964, 'BAJA+2': 1139, 'CONTINUA': 161181}, 202105: {'BAJA+1': 1143, 'BAJA+2': 870, 'CONTINUA': 161755}, 202106: {'BAJA+1': 874, 'BAJA+2': 1098, 'CONTINUA': 162142}}
+2026-10-10 14:16:41  Filas: 654066 de marzo a junio, 164647 de agosto | 760 variables reales | datos en 0.2 min
+2026-10-10 14:17:07  Ranking listo en 26 s
+2026-10-10 14:17:07  Funciones listas
+2026-10-10 14:18:29    selección semilla 101737: 18109 filas (2013 positivos), AUC junio 0.9219, 1.4 min
+2026-10-10 14:19:39    selección semilla 303011: 18245 filas (2013 positivos), AUC junio 0.9211, 1.2 min
+2026-10-10 14:20:47    selección semilla 602909: 18299 filas (2013 positivos), AUC junio 0.9220, 1.1 min
+2026-10-10 14:20:47    media_1desvio: 95 variables (665 eliminadas). Algunas eliminadas: ['Master_Finiciomora', 'Master_Finiciomora_delta_lag1', 'Master_Finiciomora_delta_lag2', 'Master_Finiciomora_lag1', 'Master_Finiciomora_lag2', 'Master_Fvencimiento_delta_lag1', 'Master_Fvencimiento_delta_lag2', 'Master_cadelantosefectivo']
+2026-10-10 14:20:48    media_2desvios: 128 variables (632 eliminadas). Algunas eliminadas: ['Master_Finiciomora', 'Master_Finiciomora_delta_lag1', 'Master_Finiciomora_delta_lag2', 'Master_Finiciomora_lag1', 'Master_Finiciomora_lag2', 'Master_Fvencimiento_delta_lag1', 'Master_Fvencimiento_delta_lag2', 'Master_cadelantosefectivo']
+2026-10-10 14:27:04    sin_eliminar    semilla 101737: AUC 0.92053 | ganancia 381.5 con 10329 | 1121 árboles | 6.3 min | faltan 14 (~1.5 h)
+2026-10-10 14:28:05    media_1desvio   semilla 101737: AUC 0.92063 | ganancia 374.3 con 11280 | 1114 árboles | 1.0 min | faltan 13 (~0.8 h)
+2026-10-10 14:29:23    media_2desvios  semilla 101737: AUC 0.92255 | ganancia 379.8 con 10939 | 1132 árboles | 1.3 min | faltan 12 (~0.6 h)
+2026-10-10 14:35:52    sin_eliminar    semilla 303011: AUC 0.92118 | ganancia 377.9 con 11588 | 1137 árboles | 6.5 min | faltan 11 (~0.7 h)
+2026-10-10 14:36:55    media_1desvio   semilla 303011: AUC 0.92042 | ganancia 379.7 con 13703 | 1115 árboles | 1.0 min | faltan 10 (~0.5 h)
+2026-10-10 14:38:17    media_2desvios  semilla 303011: AUC 0.92223 | ganancia 382.5 con 12708 | 1137 árboles | 1.3 min | faltan 9 (~0.4 h)
+2026-10-10 14:44:48    sin_eliminar    semilla 602909: AUC 0.92118 | ganancia 378.9 con 11100 | 1137 árboles | 6.5 min | faltan 8 (~0.5 h)
+2026-10-10 14:45:48    media_1desvio   semilla 602909: AUC 0.92004 | ganancia 377.8 con 11881 | 1115 árboles | 1.0 min | faltan 7 (~0.4 h)
+2026-10-10 14:47:09    media_2desvios  semilla 602909: AUC 0.92281 | ganancia 387.2 con 11656 | 1133 árboles | 1.3 min | faltan 6 (~0.3 h)
+2026-10-10 14:53:33    sin_eliminar    semilla 707717: AUC 0.92077 | ganancia 376.7 con 10440 | 1108 árboles | 6.4 min | faltan 5 (~0.3 h)
+2026-10-10 14:54:37    media_1desvio   semilla 707717: AUC 0.92065 | ganancia 379.1 con 12877 | 1123 árboles | 1.0 min | faltan 4 (~0.2 h)
+2026-10-10 14:55:58    media_2desvios  semilla 707717: AUC 0.92217 | ganancia 381.1 con 12089 | 1143 árboles | 1.3 min | faltan 3 (~0.1 h)
+2026-10-10 15:02:31    sin_eliminar    semilla 906007: AUC 0.92099 | ganancia 372.9 con 11372 | 1134 árboles | 6.5 min | faltan 2 (~0.1 h)
+2026-10-10 15:03:39    media_1desvio   semilla 906007: AUC 0.92034 | ganancia 380.0 con 14250 | 1111 árboles | 1.1 min | faltan 1 (~0.1 h)
+2026-10-10 15:05:02    media_2desvios  semilla 906007: AUC 0.92261 | ganancia 388.6 con 11835 | 1128 árboles | 1.4 min | faltan 0 (~0.0 h)
+2026-10-10 15:05:02  Comparación: 15 corridas (15 nuevas) en 44 min
+2026-10-10 15:05:02  Regla: gana la mayor mejora de ganancia con t pareado >= 2.0 -> media_2desvios
+2026-10-10 15:05:03  Lista elegida: media_2desvios (128 variables)
+2026-10-10 15:05:04  Bayesiana: 0 de 21 corridas hechas
+2026-10-10 15:06:27    corrida  1/21 (s0006 ) iter 1155 | hojas  126 | hessian 0.09400 -> AUC 0.92255 | ganancia 379.8 con 10939 | 1132 árboles | 1.4 min | faltan ~0.8 h
+2026-10-10 15:07:48    corrida  2/21 (azar  ) iter  970 | hojas 1601 | hessian 0.40206 -> AUC 0.92213 | ganancia 380.8 con 14470 | 963 árboles | 1.3 min | faltan ~0.8 h
+2026-10-10 15:10:18    corrida  3/21 (azar  ) iter 3650 | hojas 1573 | hessian 0.30087 -> AUC 0.92320 | ganancia 383.8 con 11050 | 1814 árboles | 2.5 min | faltan ~0.6 h
+2026-10-10 15:11:40    corrida  4/21 (azar  ) iter  917 | hojas  344 | hessian 0.14880 -> AUC 0.92221 | ganancia 377.0 con 11853 | 913 árboles | 1.3 min | faltan ~0.6 h
+2026-10-10 15:13:42    corrida  5/21 (azar  ) iter 1049 | hojas  481 | hessian 0.88763 -> AUC 0.92210 | ganancia 380.7 con 12092 | 1033 árboles | 2.0 min | faltan ~0.6 h
+2026-10-10 15:15:25    corrida  6/21 (azar  ) iter 1537 | hojas  403 | hessian 0.64185 -> AUC 0.92282 | ganancia 385.1 con 11204 | 1392 árboles | 1.7 min | faltan ~0.6 h
+2026-10-10 15:18:00    corrida  7/21 (azar  ) iter 3788 | hojas  364 | hessian 0.25485 -> AUC 0.92327 | ganancia 389.9 con 12196 | 1817 árboles | 2.6 min | faltan ~0.5 h
+2026-10-10 15:18:56    corrida  8/21 (azar  ) iter  511 | hojas  633 | hessian 0.69712 -> AUC 0.92000 | ganancia 376.7 con 11089 | 511 árboles | 0.9 min | faltan ~0.5 h
+2026-10-10 15:21:01    corrida  9/21 (azar  ) iter 2727 | hojas  176 | hessian 0.65910 -> AUC 0.92320 | ganancia 384.1 con 12010 | 1689 árboles | 2.1 min | faltan ~0.4 h
+2026-10-10 15:22:17    corrida 10/21 (azar  ) iter  987 | hojas   99 | hessian 0.88808 -> AUC 0.92194 | ganancia 382.1 con 12478 | 979 árboles | 1.2 min | faltan ~0.4 h
+2026-10-10 15:24:04    corrida 11/21 (azar  ) iter 1757 | hojas  681 | hessian 0.84295 -> AUC 0.92317 | ganancia 386.5 con 11730 | 1463 árboles | 1.8 min | faltan ~0.3 h
+2026-10-10 15:26:43    corrida 12/21 (guiada) iter 3958 | hojas  685 | hessian 0.24617 -> AUC 0.92337 | ganancia 387.4 con 11580 | 1819 árboles | 2.6 min | faltan ~0.3 h
+2026-10-10 15:29:06    corrida 13/21 (guiada) iter 3352 | hojas  204 | hessian 0.09325 -> AUC 0.92301 | ganancia 380.5 con 11429 | 1785 árboles | 2.4 min | faltan ~0.3 h
+2026-10-10 15:31:04    corrida 14/21 (guiada) iter 2998 | hojas   28 | hessian 0.31679 -> AUC 0.92031 | ganancia 377.0 con 9915 | 1816 árboles | 1.9 min | faltan ~0.2 h
+2026-10-10 15:33:27    corrida 15/21 (guiada) iter 3092 | hojas  610 | hessian 0.20118 -> AUC 0.92302 | ganancia 383.0 con 11869 | 1737 árboles | 2.4 min | faltan ~0.2 h
+2026-10-10 15:35:39    corrida 16/21 (guiada) iter 2600 | hojas 1267 | hessian 0.24236 -> AUC 0.92311 | ganancia 385.6 con 11548 | 1674 árboles | 2.2 min | faltan ~0.2 h
+2026-10-10 15:38:19    corrida 17/21 (guiada) iter 3981 | hojas  675 | hessian 0.46847 -> AUC 0.92350 | ganancia 389.0 con 12961 | 1820 árboles | 2.6 min | faltan ~0.1 h
+2026-10-10 15:40:54    corrida 18/21 (guiada) iter 4060 | hojas  259 | hessian 0.48800 -> AUC 0.92328 | ganancia 387.1 con 11402 | 1840 árboles | 2.6 min | faltan ~0.1 h
+2026-10-10 15:43:30    corrida 19/21 (guiada) iter 3648 | hojas  739 | hessian 0.44183 -> AUC 0.92338 | ganancia 385.0 con 12875 | 1790 árboles | 2.6 min | faltan ~0.1 h
+2026-10-10 15:46:06    corrida 20/21 (guiada) iter 3939 | hojas  831 | hessian 0.53079 -> AUC 0.92301 | ganancia 382.1 con 11612 | 1800 árboles | 2.6 min | faltan ~0.0 h
+2026-10-10 15:48:26    corrida 21/21 (guiada) iter 3227 | hojas  443 | hessian 0.54435 -> AUC 0.92335 | ganancia 391.7 con 11286 | 1738 árboles | 2.3 min | faltan ~0.0 h
+2026-10-10 15:48:26  Mejores valores: {'num_iterations': 3981, 'num_leaves': 675, 'min_sum_hessian_in_leaf': 0.4684690798156574} | AUC junio 0.92350
+2026-10-10 15:51:06    referencia semilla 303011: 387.8 | 2.6 min
+2026-10-10 15:53:45    referencia semilla 602909: 389.1 | 2.7 min
+2026-10-10 15:53:46    ensamble de 3 media_2desvios_optimizada: AUC 0.92375 | ganancia máxima 390.3 con 12698
+2026-10-10 15:53:46    ensamble de 3 sin_eliminar_s0006: AUC 0.92123 | ganancia máxima 379.8 con 10673
+2026-10-10 15:53:47  Agosto: 0 semillas guardadas, faltan 20
+2026-10-10 15:57:32    [1/20] semilla 101737: 3.8 min
+2026-10-10 16:01:15    [2/20] semilla 303011: 3.7 min
+2026-10-10 16:05:09    [3/20] semilla 602909: 3.9 min
+2026-10-10 16:08:57    [4/20] semilla 707717: 3.8 min
+2026-10-10 16:12:45    [5/20] semilla 906007: 3.8 min
+2026-10-10 16:16:24    [6/20] semilla 568318: 3.6 min
+2026-10-10 16:20:07    [7/20] semilla 641463: 3.7 min
+2026-10-10 16:23:51    [8/20] semilla 591763: 3.7 min
+2026-10-10 16:27:41    [9/20] semilla 616818: 3.8 min
+2026-10-10 16:31:35    [10/20] semilla 193376: 3.9 min
+2026-10-10 16:35:28    [11/20] semilla 854303: 3.9 min
+2026-10-10 16:39:10    [12/20] semilla 358867: 3.7 min
+2026-10-10 16:42:55    [13/20] semilla 781969: 3.8 min
+2026-10-10 16:46:34    [14/20] semilla 892547: 3.6 min
+2026-10-10 16:50:20    [15/20] semilla 207331: 3.8 min
+2026-10-10 16:54:05    [16/20] semilla 392281: 3.8 min
+2026-10-10 16:57:44    [17/20] semilla 108179: 3.6 min
+2026-10-10 17:01:40    [18/20] semilla 198461: 3.9 min
+2026-10-10 17:05:20    [19/20] semilla 406951: 3.7 min
+2026-10-10 17:09:02    [20/20] semilla 670931: 3.7 min
+2026-10-10 17:09:09  Cortes: 13 CSV con 20 semillas de media_2desvios en /home/ds/buckets/b1/exp/z9920/6_cortes
+2026-10-10 17:09:09  z9920 terminado (modo prueba: False). Resultados en /home/ds/buckets/b1/exp/z9920
+2026-10-10 17:09:10  [apagado] fin del notebook: borrando la máquina virtual. Los resultados quedaron en /home/ds/buckets/b1/exp/z9920

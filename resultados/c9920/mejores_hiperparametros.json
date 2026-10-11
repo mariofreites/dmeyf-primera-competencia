@@ -1,0 +1,15 @@
+{
+  "corrida": 16,
+  "valores": {
+    "num_iterations": 3981,
+    "num_leaves": 675,
+    "min_sum_hessian_in_leaf": 0.4684690798156574
+  },
+  "auc": 0.9234999760308265,
+  "ganancia_corte_10000": 373.5982035929634,
+  "ganancia_maxima": 389.0299850301603,
+  "mejor_corte": 12961,
+  "minutos": 2.6,
+  "num_trees": 1820,
+  "tipo": "guiada"
+}

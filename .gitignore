@@ -1,0 +1,11 @@
+# Salidas de las corridas locales y datos
+outputs/
+data/
+
+# Copias ejecutadas de los notebooks y logs de nohup
+*_corrida.ipynb
+*_prueba.ipynb
+*_run.txt
+
+.ipynb_checkpoints/
+__pycache__/
