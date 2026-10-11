@@ -42,7 +42,7 @@ nohup jupyter nbconvert --to notebook --execute c9923_VariablesNuevas.ipynb \
 
 c9923 lee de `exp/c9920/` la lista `media_2desvios` y los mejores hiperparámetros de c9920, que usa como primera corrida de su bayesiana. El envío queda en `~/buckets/b1/exp/c9923/5_cortes/c9923_60sem_corte11000.csv`.
 
-**Atajo:** si no querés correr c9920, c9923 puede leer los archivos guardados en `resultados/c9920`:
+**Atajo:** se puede evitar correr c9920, ya que c9923 puede leer los archivos guardados en `resultados/c9920`:
 
 ```bash
 DMEYF_C9920_DIR=~/dmeyf-primera-competencia/resultados/c9920 nohup jupyter nbconvert ...   # el mismo comando de c9923
